@@ -1,0 +1,22 @@
+{
+  "name": "qnmisc",
+  "version": "1.0.0",
+  "description": "picture",
+  "main": "index.js",
+  "author": "@pfan",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "images": "^3.0.0",
+    "lithe": "^0.3.6",
+    "node-smushit": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pics": "node index"
+  },
+  "keywords": [
+    "picture"
+  ]
+}
