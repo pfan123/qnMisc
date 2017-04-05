@@ -10,7 +10,6 @@ git commit -m "Deployed from Travis CI"
 git push --force --quiet "https://${DEPLOY_TOKEN}@github.com:pfan123/qnMisc.git" master:test
 
 echo "发布完成"
-DEPLOY_TOKEN
 
 
 
