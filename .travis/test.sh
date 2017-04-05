@@ -1,4 +1,5 @@
 #!/bin/bash
+
 cd dist
 git init
 git config user.name "pfan123"
