@@ -118,16 +118,21 @@ changed.forEach( (file) => {
 })
 
 //上传
-if(changed.length >= 1){
-  log(chalk.red( curTime() ) + "  " + chalk.red("上传变更文件："));
+try{
+  if(changed.length >= 1){
+    log(chalk.red( curTime() ) + "  " + chalk.red("上传变更文件："));
 
-  //调用uploadFile上传
-  changed.forEach( (file) => {
-    uploadFile(file.replace('src/', ''), path.join(process.cwd(), file.replace('src', 'dist')));
-  })  
-}else{
-  log(chalk.red( curTime() ) + "  " + chalk.red("没有任何文件变更"));
+    //调用uploadFile上传
+    changed.forEach( (file) => {
+      uploadFile(file.replace('src/', ''), path.join(process.cwd(), file.replace('src', 'dist')));
+    })  
+  }else{
+    log(chalk.red( curTime() ) + "  " + chalk.red("没有任何文件变更"));
+  }  
+}catch(err){
+
 }
+
 
 
 
