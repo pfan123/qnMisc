@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd dist
 git init
 git config user.name "pfan123"
 git config user.email "768065158@qq.com"
