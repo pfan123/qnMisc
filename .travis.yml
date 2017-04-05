@@ -1,13 +1,16 @@
-language: node_js
+language: node_js  # 声明构建语言环境 
 
-#sudo: false
+notifications:      # 每次构建的时候是否通知，如果不想收到通知邮箱，就设置false
+  email: false
 
-node_js:
+#sudo: false   # 开启基于容器的Travis CI任务，让编译效率更高
+
+node_js:   # node测试版本，可以多个
 #  - "7"
   - "6"
 #  - "5"
 
-cache:
+cache:    # 构建缓存文件，方便开始构建测试
   directories:
     - node_modules
 
