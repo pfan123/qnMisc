@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd dist
+cd dist 
+rm -rf *
 git init
 git config user.name "pfan123"
 git config user.email "768065158@qq.com"
@@ -10,3 +11,7 @@ git push --force --quiet "https://${DEPLOY_TOKEN}@github.com:pfan123/qnMisc.git"
 
 echo "发布完成"
 DEPLOY_TOKEN
+
+
+
+
