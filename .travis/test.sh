@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd dist 
+ls
 rm -rf *
 git init
 git config user.name "pfan123"
