@@ -130,7 +130,7 @@ try{
     log(chalk.red( curTime() ) + "  " + chalk.red("没有任何文件变更"));
   }  
 }catch(err){
-
+  console.log(err)
 }
 
 
