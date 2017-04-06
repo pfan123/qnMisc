@@ -17,7 +17,7 @@ qiniu.conf.ACCESS_KEY = accessKey
 qiniu.conf.SECRET_KEY = secretKey
 
 //要上传的空间
-bucket = 'pfanblog';
+bucket = 'pfan';
 
 //构建上传策略函数
 function uptoken(bucket, key) {
