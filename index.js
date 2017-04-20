@@ -17,7 +17,7 @@ qiniu.conf.ACCESS_KEY = accessKey
 qiniu.conf.SECRET_KEY = secretKey
 
 //要上传的空间
-bucket = 'pfan';
+bucket = 'test';
 
 //构建上传策略函数
 function uptoken(bucket, key) {
@@ -117,8 +117,8 @@ changed.forEach( (file) => {
 
 })
 
+//上传
 try{
-  //上传
   if(changed.length >= 1){
     log(chalk.red( curTime() ) + "  " + chalk.red("上传变更文件："));
 
@@ -128,11 +128,11 @@ try{
     })  
   }else{
     log(chalk.red( curTime() ) + "  " + chalk.red("没有任何文件变更"));
-  }
-
+  }  
 }catch(err){
   console.log(err)
 }
+
 
 
 
